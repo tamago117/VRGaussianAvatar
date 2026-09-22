@@ -21,7 +21,7 @@ from typing import List
 # --- Configuration ---
 class CONFIG:
     LHM_APP_PATH   = "./LHM"
-    TARGET_IMAGE_PATH = "./LHM/train_data/example_imgs/p_male_0_input.jpg"
+    TARGET_IMAGE_PATH = "./LHM/train_data/example_imgs/0000_test.png"
     MODEL_NAME     = "LHM-500M-HF"
     RENDER_WIDTH   = 512
     RENDER_HEIGHT  = 512

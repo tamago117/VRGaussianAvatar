@@ -134,3 +134,13 @@ VRGaussianAvatar_VRFrontend/UserSettings/Layouts/
 *.nvp
 *.nsys-rep
 *.nsight-cuprof-report
+
+# ------------------------------------------------------------------------------
+# GA Backend model weights and local artifacts
+#   The weights themselves land in LHM/pretrained_models/, inside the submodule,
+#   which LHM's own .gitignore already covers. These rules catch the download
+#   archive (~18.8 GB) and anything extracted to the wrong place by mistake.
+# ------------------------------------------------------------------------------
+VRGaussianAvatar_GABackend/pretrained_models/
+VRGaussianAvatar_GABackend/*.tar
+VRGaussianAvatar_GABackend/smoke_out/
