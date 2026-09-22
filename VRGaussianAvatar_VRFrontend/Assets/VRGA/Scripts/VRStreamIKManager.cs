@@ -4,10 +4,10 @@ using System.Collections.Concurrent;
 using System;
 using System.Collections.Generic;
 using System.IO;                      // For dual-pack binary parsing
-using RootMotion.FinalIK;
 using Newtonsoft.Json;
 using NativeWebSocket;
 
+[DefaultExecutionOrder(1000)]   // solve after SimpleVRIK (500) so the sampled pose is this frame's
 public class VRStreamIKManager : MonoBehaviour
 {
     [Header("Server Settings")]
@@ -18,7 +18,7 @@ public class VRStreamIKManager : MonoBehaviour
     public Transform offsetTransform;
 
     [Header("Avatar Settings")]
-    public VRIK ik;
+    public SimpleVRIK ik;
     public Animator animator;
 
     [Header("VR Display Settings")]

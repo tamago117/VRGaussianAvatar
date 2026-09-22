@@ -144,3 +144,17 @@ VRGaussianAvatar_VRFrontend/UserSettings/Layouts/
 VRGaussianAvatar_GABackend/pretrained_models/
 VRGaussianAvatar_GABackend/*.tar
 VRGaussianAvatar_GABackend/smoke_out/
+
+# ------------------------------------------------------------------------------
+# VRFrontend: large third-party content
+#   These are registry packages at the exact versions manifest.json already
+#   pins, so Unity resolves them identically on a fresh clone. Keeping the
+#   embedded copies out saves ~70 MB.
+# ------------------------------------------------------------------------------
+VRGaussianAvatar_VRFrontend/Packages/com.unity.inputsystem/
+VRGaussianAvatar_VRFrontend/Packages/com.unity.timeline/
+
+#   SMPL-X body models (~333 MB) are redistributed under their own licence and
+#   have to be obtained from https://smpl-x.is.tue.mpg.de/ per user.
+VRGaussianAvatar_VRFrontend/Assets/VRGA/Scene/SMPLX-Unity/
+VRGaussianAvatar_VRFrontend/Assets/VRGA/Scene/SMPLX-Unity.meta
