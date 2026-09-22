@@ -158,3 +158,10 @@ VRGaussianAvatar_VRFrontend/Packages/com.unity.timeline/
 #   have to be obtained from https://smpl-x.is.tue.mpg.de/ per user.
 VRGaussianAvatar_VRFrontend/Assets/VRGA/Scene/SMPLX-Unity/
 VRGaussianAvatar_VRFrontend/Assets/VRGA/Scene/SMPLX-Unity.meta
+
+#   C1_Self_Client.unity is 1.08 GB, almost all of it one Mesh serialized inline
+#   into the scene, so it is over GitHub's 100 MB file limit. Copy it between
+#   machines out of band. Its .meta stays tracked so the GUID survives.
+#   To make it committable, extract that Mesh to its own .asset and have the
+#   scene reference it.
+VRGaussianAvatar_VRFrontend/Assets/VRGA/Scene/C1_Self_Client.unity
